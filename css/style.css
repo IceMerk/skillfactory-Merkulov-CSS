@@ -108,6 +108,8 @@ nav {
 .block1-content button {
     padding: 16px 63px;
     background-color: red;
+    color: white;
+    font-size: 18px;
     border: none;
     border-radius: 6px;
     margin: 50px 0 123px;
@@ -179,7 +181,7 @@ main {
     height: 55px;
     margin: 64px 0;
     font-size: 18px;
-    font-style: bold;
+    font-style: normal;
 
 }
 
@@ -211,6 +213,16 @@ main {
     max-width: 1249px;
     margin: 0 auto;
 }
+
+.block3 hr {
+    width: 1251px
+}
+
+.block3 hr:nth-of-type(even) {
+    width: 134px;
+    border-top: 2px solid #FF2D2D;
+}
+
 
 .block3 h1 {
     font-family: 'Open Sans', Helvetika, Arial, sans-serif;
@@ -288,6 +300,8 @@ main {
 .block4-text hr {
     margin-left: 0;
     margin-bottom: 66px;
+    width: 134px;
+    border-top: 2px solid #FF2D2D;
 }
 
 /*Блок 4 с командой */
@@ -435,8 +449,9 @@ main {
     margin-top: 58px;
     margin-left: 0;
     margin-bottom: 66px;
+    width: 134px;
+    border-top: 2px solid #FF2D2D;
 }
-
 
 .block6-wrapper {
     display: flex;
@@ -496,7 +511,7 @@ main {
 .block6-contact h1 {
     color: white;
     font-family: 'Open Sans', Helvetika, Arial, sans-serif;
-    font-style: bold;
+    font-style: normal;
     font-weight: 700;
     font-size: 18px;
     text-transform: uppercase;
