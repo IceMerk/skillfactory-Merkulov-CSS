@@ -180,7 +180,14 @@ main {
     margin: 64px 0;
     font-size: 18px;
     font-style: bold;
+
 }
+
+.block2-text1 a {
+    text-decoration: none;
+    color: #FF2D2D;
+}
+
 
 /*Вторая половина Блока 2*/
 .block2-text2 {
@@ -346,7 +353,7 @@ main {
 
 /*Блок 5 (Email)*/
 
-.block5 {
+#block5 {
     position: relative;
     margin-top: 106px;
     background-color: #2C2C2C;
@@ -364,7 +371,7 @@ main {
     align-items: center;
 }
 
-.block5 h1 {
+#block5 h1 {
     color: white;
     font-family: 'Open Sans', Helvetika, Arial, sans-serif;
     font-style: normal;
@@ -373,7 +380,7 @@ main {
     text-transform: uppercase;
 }
 
-.block5 p {
+#block5 p {
     color: white;
 }
 
@@ -406,7 +413,7 @@ main {
 
 /*Блок 6 */
 
-.block6 {
+#block6 {
     max-width: 1249px;
     margin: 0 auto;
 }
