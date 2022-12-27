@@ -203,6 +203,7 @@ main {
     display: flex;
     max-width: 640px;
     flex-wrap: wrap;
+    padding-top: 10px;
 }
 
 .block2-service {
@@ -605,6 +606,10 @@ footer {
     flex-wrap: wrap;
     align-items: center;
     align-content: center;
+}
+
+.block2-text2 {
+    margin: 0 auto;
 }
 
 .block4-wrapper {
