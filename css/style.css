@@ -4,7 +4,7 @@
     font-weight: 400;
     font-display: swap;
     src: local("Open Sans Regular"), local("OpenSans Regular"),
-    url("../fonts/OpenSans-Regular.woff2") format("woff2");
+    url("../fonts/OpenSans-Regular.ttf") format("woff2");
 }
 
 @font-face {
@@ -13,7 +13,7 @@
     font-weight: 600;
     font-display: swap;
     src: local("OpenSans SemiBold"), local("OpenSans SemiBold"),
-    url("../fonts/OpenSans-SemiBold.woff2") format("woff2");
+    url("../fonts/OpenSans-SemiBold.ttf") format("woff2");
 }
 
 @font-face {
@@ -22,7 +22,7 @@
     font-weight: 700;
     font-display: swap;
     src: local("OpenSans Bold"), local("OpenSans Bold"),
-    url("../fonts/OpenSans-Bold.woff2") format("woff2");
+    url("../fonts/OpenSans-Bold.ttf") format("woff2");
 }
 
 body {
@@ -32,12 +32,32 @@ body {
     font-style: normal;
     font-weight: 400;
     position: relative;
+    margin-right: 0.7em;
+    margin-left: 0.7em;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-family: 'Open Sans', Helvetika, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+h2 {
+    font-family: 'Open Sans', Helvetika, Arial, sans-serif;
+    font-weight: 600;
 }
 
 header {
 	background-color: #F6F2F2;
     margin: 0;
     padding: 29px 0 0;
+
 }
 
 /* Меню */
@@ -60,8 +80,7 @@ nav {
 }
 
 .menu a {
-    color: #FFFFFF;
-    text-decoration: none;
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -82,7 +101,6 @@ nav {
     display: flex;
     max-width: 1249px;
     margin: 102px auto 0;
-    flex-wrap: wrap;
 }
 
 /* Контент Блока 1 */
@@ -92,12 +110,7 @@ nav {
 }
 
 .block1-content h1 {
-    font-family: 'Open Sans', Helvetika, Arial, sans-serif;
-    font-style: normal;
-    font-weight: 700;
     font-size: 50px;
-    text-transform: uppercase;
-    margin: 0;
 }
 
 .block1-content p {
@@ -120,7 +133,6 @@ nav {
 
 .block1-content a {
     color: white;
-    text-decoration: none;
     font-size: 18px;
 }
 
@@ -164,12 +176,7 @@ main {
 }
 
 .block2-text1 h1 {
-    font-family: 'Open Sans', Helvetika, Arial, sans-serif;
-    font-style: normal;
-    font-weight: 700;
     font-size: 42px;
-    text-transform: uppercase;
-    margin: 0;
 }
 
 .block2-text1 button {
@@ -186,14 +193,13 @@ main {
 }
 
 .block2-text1 a {
-    text-decoration: none;
     color: #FF2D2D;
 }
 
 
 /*Вторая половина Блока 2*/
 .block2-text2 {
-    margin: 102px 0;
+    margin: 102px 0 45px;
     display: flex;
     max-width: 640px;
     flex-wrap: wrap;
@@ -203,8 +209,19 @@ main {
     width: 50%;
 }
 
-.block2-service h1 {
+.block2-service img {
+    width: 35px;
+    height: 35px;
+    margin-bottom: 5px;
+}
+
+.block2-service h2 {
     margin: 0;
+}
+
+.block2-service p{
+    margin-bottom: 45px;
+    margin-right: 19px;
 }
 
 /*Блок 3*/
@@ -215,7 +232,8 @@ main {
 }
 
 .block3 hr {
-    width: 1251px
+    width: 1251px;
+    background-color: #ECECEC;
 }
 
 .block3 hr:nth-of-type(even) {
@@ -225,11 +243,7 @@ main {
 
 
 .block3 h1 {
-    font-family: 'Open Sans', Helvetika, Arial, sans-serif;
-    font-style: normal;
-    font-weight: 700;
     font-size: 42px;
-    text-transform: uppercase;
     margin: 104px 0 28px;
     display: flex;
     justify-content: center;
@@ -259,7 +273,6 @@ main {
 
 .block3 a {
     color: black;
-    text-decoration: none;
     font-size: 18px;
 }
 
@@ -286,11 +299,7 @@ main {
 
 .block4-text h1 {
     margin-top: 137px;
-    font-family: 'Open Sans', Helvetika, Arial, sans-serif;
-    font-style: normal;
-    font-weight: 700;
     font-size: 41px;
-    text-transform: uppercase;
 }
 
 .block4-text p {
@@ -308,24 +317,21 @@ main {
 
 .block4-wrapper {
     display: flex;
+    align-items: center;
 }
 
 .block4-wrapper img {
     width: 324px;
     height: 460px;
     background-size: cover;
-    margin-right: 72px;
+    margin-right: 62px;
 }
 
 /*Блок 4 с командой часть 2 (текст)*/
 
 .block4-wrapper-2-text h1 {
     margin-top: 0;
-    font-family: 'Open Sans', Helvetika, Arial, sans-serif;
-    font-style: normal;
-    font-weight: 700;
     font-size: 30px;
-    text-transform: uppercase;
 }
 
 .block4-wrapper-2-text p {
@@ -345,8 +351,6 @@ main {
 
 .block4-wrapper-2-text a {
     color: black;
-    list-style-type: none;
-    text-decoration: none;
     font-style: italic;
     margin-right: 30px;
 }
@@ -355,14 +359,19 @@ main {
 
 .block4-wrapper-2-img {
     display: flex;
+    align-items: center;
+    flex-wrap: wrap;
     margin-top: 60px;
+    
 }
 
 .block4-wrapper-2-img > img {
-    width: 198px;
-    height: 217px;
+    display: flex;
+    width: 190px;
+    height: 210px;
     background-size: cover;
     margin-right: 20px;
+    margin-bottom: 10px;
 }
 
 /*Блок 5 (Email)*/
@@ -387,11 +396,7 @@ main {
 
 #block5 h1 {
     color: white;
-    font-family: 'Open Sans', Helvetika, Arial, sans-serif;
-    font-style: normal;
-    font-weight: 700;
     font-size: 41px;
-    text-transform: uppercase;
 }
 
 #block5 p {
@@ -434,11 +439,7 @@ main {
 
 .block6-text h1 {
     margin-top: 104px;
-    font-family: 'Open Sans', Helvetika, Arial, sans-serif;
-    font-style: normal;
-    font-weight: 700;
     font-size: 41px;
-    text-transform: uppercase;
 }
 
 .block6-text p {
@@ -510,11 +511,7 @@ main {
 
 .block6-contact h1 {
     color: white;
-    font-family: 'Open Sans', Helvetika, Arial, sans-serif;
-    font-style: normal;
-    font-weight: 700;
     font-size: 18px;
-    text-transform: uppercase;
     justify-content: flex-start;
     padding-bottom: 5px;
 }
@@ -546,7 +543,7 @@ footer {
     color: #A7A7A7;
 }
 
-/*Блок 6 Социальные сети*/
+/*Футтер Социальные сети*/
 .footer-social {
     margin-right: 168px;
 }
@@ -556,4 +553,69 @@ footer {
     border-radius: 50px;
     width: 33px;
     height: 33px;
+}
+
+
+/*Медиазапросы*/
+@media screen and (max-width: 1050px){
+
+.block1 {
+    flex-direction: column;
+    align-items: center;
+}
+
+.block1-image {
+    justify-content: center;
+}
+
+.block1 img {
+    margin-bottom: 50px;
+}
+
+#block5 h1 {
+    text-align: center;
+}
+
+.block1-content button {
+    margin-bottom: 50px;
+}
+
+.block6 {
+    align-items: center;
+}
+.block6-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.block6-email {
+    align-items: center;
+    width: 100%;
+}
+
+
+.block6-contact {
+    margin-top: 20px;
+}
+}
+
+@media screen and (max-width: 850px){
+
+.block2{
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+}
+
+.block4-wrapper {
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+}
+.block4-wrapper-img img {
+    align-items: center;
+    align-content: center;
+    margin-bottom: 30px;
+}
+
 }
